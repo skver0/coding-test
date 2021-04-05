@@ -13,7 +13,7 @@ npm install
 
 ## Commands
 
-### `npm run start`
+### `npm run dev`
 
 Builds an unoptimized development version and runs the dev server.\
 Go to [http://localhost:8080](http://localhost:8080) to view it in the browser.
@@ -23,9 +23,12 @@ The page will automatically reload if you make any changes.
 ### `npm run build`
 
 Builds the app in optimized production mode.\
-The resulting JavaScript and CSS bundles will be placed in the `./public` folder.\
+The resulting JavaScript and CSS bundles will be placed in the `./public` folder.
 
-Use a static file server like [sirv](https://www.npmjs.com/package/sirv) to serve the production build.
+### `npm run start`
+
+Runs the app built by running `npm run build` with sirv in single-page application mode (`sirv public --single`).
+> **NOTE:** You must run `npm run build` before executing this task.
 
 ## Frameworks/libraries used
 
