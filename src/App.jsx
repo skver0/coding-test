@@ -161,10 +161,12 @@ const App = () => {
       />
       <div className="p-2">{renderRepos()}</div>
       <div className="flex justify-center">
-        <Pagination
-          nextPage={pageInfo?.hasNextPage ? nextPage : null}
-          prevPage={pageInfo?.hasPreviousPage ? prevPage : null}
-        />
+        {repos?.length > 0 && (
+          <Pagination
+            nextPage={pageInfo?.hasNextPage ? nextPage : null}
+            prevPage={pageInfo?.hasPreviousPage ? prevPage : null}
+          />
+        )}
       </div>
     </div>
   );
