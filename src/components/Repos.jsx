@@ -14,7 +14,10 @@ const Repos = ({ repos }) => {
             key={repo.id}
             className="mb-2 p-3 rounded-xl shadow-md bg-white dark:bg-gray-800"
           >
-            <a href={repo.url} className="block text-blue-600 hover:underline">
+            <a
+              href={repo.url}
+              className="block text-blue-600 dark:text-blue-400 hover:underline"
+            >
               {repo.name}
             </a>
             <p
@@ -22,7 +25,7 @@ const Repos = ({ repos }) => {
               dangerouslySetInnerHTML={{ __html: repo.shortDescriptionHTML }}
             />
             <p>Is it a fork? {repo.isFork ? "✔" : "❌"}</p>
-            <p className="flex flex-wrap text-gray-500">
+            <p className="flex flex-wrap text-gray-500 dark:text-gray-300">
               <span className="mr-4">
                 {committedDate
                   ? `Last commit at ${reformatDate(committedDate)}`
