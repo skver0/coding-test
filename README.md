@@ -8,7 +8,7 @@ cd coding-test
 npm install
 ```
 
-2. [Create a GitHub access token](https://github.com/settings/tokens/new) with access to public repositories. [(Guide)](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
+2. [Create a GitHub access token](https://github.com/settings/tokens/new) with access to public repositories.[(Guide)](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
 3. In `./src/index.jsx`, replace `GITHUB_AUTH_TOKEN` with the generated token.
 
 ## Commands
